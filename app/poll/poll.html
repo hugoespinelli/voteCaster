@@ -1,0 +1,26 @@
+<div class="row">
+            <div class="col-sm-12" ng-controller="PollCtrl as poll">
+
+                <div class="question" ng-hide="poll.voted">
+                    
+                    <div class="question-title cloud-border bg-light">
+                        <h4>{{:: poll.title }}</h4>
+                    </div>
+                    
+                    <div class="form-check-custom question-answer cloud-border cloud-space bg-light" 
+                    ng-repeat="choice in poll.choices">
+                        <input class="form-ckeck-input" ng-model="poll.answer" ng-value="choice" type="radio">
+                        <label class="form-check-label">{{:: choice.name }}</label>
+                    </div>
+                    
+                    <button class="btn btn-primary lg-border" ng-click="poll.vote(poll.answer)">Responder</button>
+                    
+                </div>
+
+                <div class="text-center top-distance" ng-show="poll.voted">
+                    <h3><strong>Your vote was registered!</strong></h3>
+                    <p>Thank you for vote in our website!</p>
+                </div>
+
+            </div>
+        </div>

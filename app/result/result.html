@@ -1,0 +1,38 @@
+<div class="row">
+	
+	<div class="col-sm-12 text-center" style="margin-top: 100px;">
+		<img src="../img/fox.jpg" style="height: 200px; opacity: 0.7s; border-radius: 50%">
+	</div>
+
+</div>
+
+
+<div class="row" ng-controller="ResultCtrl as result">
+	<div class="col-sm-12" >
+		<input type="text" 
+		class="form-control" 
+		placeholder="Put your access key here to see poll results"
+		ng-model="result.key"
+		ng-change="result.getResult(result.key)"
+		ng-model-options="{ debounce: 500 }"
+		style="width: 600px; margin: 50px auto 0;">
+	
+	</div>
+
+	<div class="col-sm-12 text-center" style="margin: 20px 0;">
+		<p>Dont have a poll? Create you own now!
+
+		<a href="./#/create">
+			<button class="btn btn-primary" style="margin-left: 5px;">
+				Create my Poll
+			</button>
+		</a>
+		
+		</p>
+	</div>
+
+	<poll-result poll="result.poll">
+	</poll-result>
+
+
+</div>

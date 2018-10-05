@@ -1,0 +1,65 @@
+{
+  "name": "votecaster",
+  "version": "1.0.0",
+  "description": "An app where you can create a poll and share it with friends.",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start karma.conf.js",
+    "karma": "./node_modules/karma/bin/karma --start",
+    "lint": "./node_modules/.bin/eslint app/**/*.js",
+    "prepush": "npm run lint",
+    "dev": "gulp --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugoespinelli/voteCaster.git"
+  },
+  "author": "Hugo Espinelli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hugoespinelli/voteCaster/issues"
+  },
+  "homepage": "https://github.com/hugoespinelli/voteCaster#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "lodash": "^4.17.11",
+    "moment": "^2.22.2",
+    "mysql": "^2.16.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "angular": "1.6.6",
+    "angular-route": "^1.7.4",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "dotenv": "^6.0.0",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-google": "^0.10.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-livereload": "^4.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-watch": "^5.0.1",
+    "gulp-webserver": "^0.9.1",
+    "jasmine": "^3.2.0",
+    "jasmine-core": "^3.2.1",
+    "jasmine-node": "^1.16.2",
+    "jasmine-node-karma": "^1.6.1",
+    "karma": "^3.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.2",
+    "karma-webpack": "^3.0.5",
+    "morgan": "^1.9.1",
+    "tiny-lr": "^1.1.1",
+    "toastr": "^2.1.4"
+  }
+}
